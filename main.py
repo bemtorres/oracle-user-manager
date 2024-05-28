@@ -141,9 +141,9 @@ root = tk.Tk()
 root.title("代码库 CODE&CODE | Oracle User Manager v0.1.0 | PROFE BENJA")
 
 # Añadir un ícono
-# icon_path = 'icono.ico'
-# root.iconbitmap(icon_path)
-root.iconbitmap(ICON_PATH)
+icon_path = 'icono.ico'
+root.iconbitmap(icon_path)
+# root.iconbitmap(ICON_PATH)
 
 # Establecer el tamaño de la ventana
 window_width = 500
