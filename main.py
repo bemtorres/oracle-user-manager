@@ -38,7 +38,8 @@ def create_user(drop_user = False):
             messagebox.showinfo("DROP USER", f'Usuario {new_user} eliminado exitosamente.')
         
         cursor.execute(f"CREATE USER {new_user} IDENTIFIED BY \"{new_user_password}\" DEFAULT TABLESPACE USERS TEMPORARY TABLESPACE TEMP")
-        cursor.execute(f"ALTER USER {new_user} QUOTA UNLIMITED ON USERS")
+        cursor.execute(f"ALTER USER {new_user} QUOTA UNLIMITED ON USERS")        
+        # cursor.execute(f"GRANT CREATE TABLE TO {new_user}")
         cursor.execute(f"GRANT CREATE SESSION TO {new_user}")
         cursor.execute(f"GRANT RESOURCE TO {new_user}")
         cursor.execute(f"ALTER USER {new_user} DEFAULT ROLE RESOURCE")
@@ -128,6 +129,7 @@ def load_sql_file():
             cursor.close()
         if connection:
             connection.close()
+        
 
 def center_window(window, width, height):
     screen_width = window.winfo_screenwidth()
