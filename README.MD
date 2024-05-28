@@ -9,6 +9,7 @@ Una aplicación fácil de usar para gestionar usuarios de la base de datos Oracl
 ## 中文
 一个用户友好的应用程序，用于管理 Oracle 数据库用户和通过图形界面执行 SQL 文件。
 
+Yīgè yònghù yǒuhǎo de yìngyòng chéngxù, yòng yú guǎnlǐ Oracle shùjùkù yònghù hé tōngguò túxíng jièmiàn zhíxíng SQL wénjiàn.
 
 ## Descripción del Proyecto
 
